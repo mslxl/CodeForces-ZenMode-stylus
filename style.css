@@ -1,145 +1,275 @@
-body
-	{background:#1e1f21 !important;}
+/* ==UserStyle==
+@name         Codeforces Zen
+@version      20230819.10.50
+@namespace    ?
+==/UserStyle== */
 
-body #body a:link,
-body #body a
-	{color:#868686;}
-body #body a:visited
-	{color:#3b5998;}
+@-moz-document url-prefix("https://codeforces.com") {
+	body {
+		background: #1e1f21 !important;
+	}
 
-body #body .roundbox-lt,body .roundbox-rt,body .roundbox-lb,body .roundbox-rb
+	body #body a:link,
+	body #body a {
+		color: #868686;
+	}
 
-	{display:none !important;}
+	body #body a:visited {
+		color: #3b5998;
+	}
 
-body #body #pageContent .topic
-	{filter:invert(0.3);}
+	body #body .roundbox-lt,
+	body .roundbox-rt,
+	body .roundbox-lb,
+	body .roundbox-rb {
+		display: none !important;
+	}
 
-
-body #body .datatable
-	{filter: invert(0.88);}
-body #body .datatable .rated-user
-	{filter: invert(1);}
-body #body .datatable .user-admin,
-body #body .datatable .user-black
-	{filter:invert(0) !important;}
-body #body .datatable .user-legendary 
-	{color: #1fe0e0!important;filter: invert(0) !important;}
-
-body #body #sidebar,
-body #body #footer
-	{opacity:0.1;transition:0.9s opacity;}
-body #body #sidebar:hover,
-body #body #footer:hover
-	{opacity:1;}
-
-body #body .problem-statement .sample-tests .title,
-body #body .roundbox .rtable td,
-body #body .roundbox .rtable th,
-body #body .roundbox .titled
-	{border-color:#3a3b3d;}
-
-body #body .search,
-body #body .problem-statement .sample-tests .input,
-body #body .problem-statement .sample-tests .output,
-body #body #footer
-
-	{border-color:#555;}
+	body #body #pageContent .topic {
+		filter: invert(0.3);
+	}
 
 
-body #body .search
-	{background-color: #4c4c4c;color:#ddd;}
+	body #body .datatable {
+		filter: invert(0.88);
+	}
+
+	body #body .datatable .rated-user {
+		filter: invert(1);
+	}
+
+	body #body .datatable .user-admin,
+	body #body .datatable .user-black {
+		filter: invert(0) !important;
+	}
+
+	body #body .datatable .user-legendary {
+		color: #1fe0e0 !important;
+		filter: invert(0) !important;
+	}
+
+	body #body #sidebar,
+	body #body #footer {
+		opacity: 0.1;
+		transition: 0.9s opacity;
+	}
+
+	body #body #sidebar:hover,
+	body #body #footer:hover {
+		opacity: 1;
+	}
+
+	body #body .problem-statement .sample-tests .title,
+	body #body .roundbox .rtable td,
+	body #body .roundbox .rtable th,
+	body #body .roundbox .titled {
+		border-color: #3a3b3d;
+	}
+
+	body #body .search,
+	body #body .problem-statement .sample-tests .input,
+	body #body .problem-statement .sample-tests .output,
+	body #body #footer {
+		border-color: #555;
+	}
 
 
-body #body .second-level-menu-list li.backLava
-	{background: #444 !important; border-radius: 6px;}
-body #body .second-level-menu-list li.backLava>*
-	{display:none;}
-body #body .second-level-menu-list li a
-	{color:#9a9a9a;}
+	body #body .search {
+		background-color: #4c4c4c;
+		color: #ddd;
+	}
 
 
-body #body #pageContent
-	{padding-top:50px;}
-body #body
-	{max-width: 90vw; min-width: initial; width: 906px;}
-body #body #header .roundbox
-	{color:#eee;}
-body #body #header>div:first-child img
-	{filter:invert(0.88);}
-body #body .header-bell__img
-	{filter: invert(0.88);}
-body #body .menu-list li a
-	{color:#ccc;}
-body #body #footer
-	{color:#eee;font-size:12px;margin-top:100px;padding-top:50px;}
-body #body #footer a
-	{color:#eee;}
+	body #body .second-level-menu-list li.backLava {
+		background: #444 !important;
+		border-radius: 6px;
+	}
 
-body #body #sidebar
-	{position: absolute;margin: 0;left: 100%;}
+	body #body .second-level-menu-list li.backLava>* {
+		display: none;
+	}
 
-body #body .content-with-sidebar
-	{margin-right:1em !important}
+	body #body .second-level-menu-list li a {
+		color: #9a9a9a;
+	}
 
 
-body #body div.ttypography
-	{color:#c0c0c0;}
-body #body div.ttypography .MathJax
-	{color:#eee !important;}
+	body #body #pageContent {
+		padding-top: 50px;
+	}
 
-body #body .roundbox
-	{background-color:#2c2d30 !important;color:#ddd;border-color:#3a3b3d;}
-body #body .roundbox table.rtable a
-	{color:#bababa !important;}
-body #body .roundbox .dark
-	{background-color:#262729;}
-body #body .roundbox .caption
-	{color:#355cac;}
+	body #body {
+		max-width: 90vw;
+		min-width: initial;
+		width: 906px;
+	}
 
-body #body .problem-statement .sample-tests pre
-	{background-color:#111; color:#ccc;}
+	body #body #header .roundbox {
+		color: #eee;
+	}
+
+	body #body #header>div:first-child img {
+		filter: invert(0.88);
+	}
+
+	body #body .header-bell__img {
+		filter: invert(0.88);
+	}
+
+	body #body .menu-list li a {
+		color: #ccc;
+	}
+
+	body #body #footer {
+		color: #eee;
+		font-size: 12px;
+		margin-top: 100px;
+		padding-top: 50px;
+	}
+
+	body #body #footer a {
+		color: #eee;
+	}
+
+	body #body #sidebar {
+		position: absolute;
+		margin: 0;
+		left: 100%;
+	}
+
+	body #body .content-with-sidebar {
+		margin-right: 1em !important
+	}
+
+
+	body #body div.ttypography {
+		color: #c0c0c0;
+	}
+
+	body #body div.ttypography .MathJax {
+		color: #eee !important;
+	}
+
+	body #body .roundbox {
+		background-color: #2c2d30 !important;
+		color: #ddd;
+		border-color: #3a3b3d;
+	}
+
+	body #body .roundbox table.rtable a {
+		color: #bababa !important;
+	}
+
+	body #body .roundbox .dark {
+		background-color: #262729;
+	}
+
+	body #body .roundbox .caption {
+		color: #355cac;
+	}
+
+	body #body .problem-statement .sample-tests pre {
+		background-color: #111;
+		color: #ccc;
+	}
 
 
 
-body #body select
-	{background-color:#ebebeb21; color:#b8b8b8;}
-body #body input[type="submit"],
-body #body button
-	{background-color:#777;border:1px solid #888;;color:#eee !important;cursor:pointer;}
+	body #body select {
+		background-color: #ebebeb21;
+		color: #b8b8b8;
+	}
 
-body #body .pagination ul li
-	{color:#ddd;}
-body #body .pagination span.active 
-	{ border: 1px solid #575757; background-color: #333333;}
-body #body .pagination .inactive
-	{color:#5f5f5f;}
-body #body .pagination .arrow
-	{color:#ddd;}
+	body #body input[type="submit"],
+	body #body button {
+		background-color: #777;
+		border: 1px solid #888;
+		;
+		color: #eee !important;
+		cursor: pointer;
+	}
+
+	body #body .pagination ul li {
+		color: #ddd;
+	}
+
+	body #body .pagination span.active {
+		border: 1px solid #575757;
+		background-color: #333333;
+	}
+
+	body #body .pagination .inactive {
+		color: #5f5f5f;
+	}
+
+	body #body .pagination .arrow {
+		color: #ddd;
+	}
 
 
 
-body #body .sidebar-menu ul a
-	{color:#aaa;}
-body #body .sidebar-menu ul li
-	{border-color:#666;border-radius:5px;}
-body #body .sidebar-menu ul li:hover,
-body #body .sidebar-menu ul li.active
-	{background-color:#555;}
+	body #body .sidebar-menu ul a {
+		color: #aaa;
+	}
+
+	body #body .sidebar-menu ul li {
+		border-color: #666;
+		border-radius: 5px;
+	}
+
+	body #body .sidebar-menu ul li:hover,
+	body #body .sidebar-menu ul li.active {
+		background-color: #555;
+	}
 
 
-body #body .verdict-unsuccessful-challenge 
-	{ color: #939393;}
-body #body .verdict-challenged 
-	{ color: #1fe0e0;}
-body #body .cell-accepted 
-	{ color: #e05fe0;}
-body #body .cell-rejected 
-	{ color: #44dbdb;}
-body #body #facebox .content
-	{filter:invert(0.8);}
-body #body img.standings-flag
-	{filter:invert(1);}
-body #body .custom-links-pagination .active 
-	{ color: #ddd;}
-body #body ._CatalogViewFrame_catalog
-	{filter:invert(1);}
+	body #body .verdict-unsuccessful-challenge {
+		color: #939393;
+	}
+
+	body #body .verdict-challenged {
+		color: #1fe0e0;
+	}
+
+	body #body .cell-accepted {
+		color: #e05fe0;
+	}
+
+	body #body .cell-rejected {
+		color: #44dbdb;
+	}
+
+	body #body #facebox .content {
+		filter: invert(0.8);
+	}
+
+	body #body img.standings-flag {
+		filter: invert(1);
+	}
+
+	body #body .custom-links-pagination .active {
+		color: #ddd;
+	}
+
+	body #body ._CatalogViewFrame_catalog {
+		filter: invert(1);
+	}
+
+	/* Compatible with Codeforces Better(https://greasyfork.org/users/747162) plugins */
+	body #body .translate-problem-statement {
+		background-color: #1e1f21;
+	}
+
+	body #body .problem-statement .test-example-line-even {
+		background: #222
+	}
+
+	body #body .test-example-line {
+		transition: all 0.15s ease;
+	}
+
+	body #body .test-example-line[style="background-color: rgb(255, 253, 231);"] {
+		color: #000;
+		font-size: large;
+	}
+}
