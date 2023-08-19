@@ -143,3 +143,14 @@ body #body .custom-links-pagination .active
 	{ color: #ddd;}
 body #body ._CatalogViewFrame_catalog
 	{filter:invert(1);}
+
+body #body .problem-statement .test-example-line-even
+	{ background: #222 }
+body #body .test-example-line
+	{ transition: all 0.15s ease; }
+body #body .test-example-line[style="background-color: rgb(255, 253, 231);"]
+	{ color: #000; font-size: large; }
+
+/* Compatible with Codeforces Better(https://greasyfork.org/users/747162) plugins */
+body #body .translate-problem-statement
+	{ background-color: #1e1f21;}
